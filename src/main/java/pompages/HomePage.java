@@ -31,6 +31,9 @@ public class HomePage {
 
 	public void SearchFor(String data) {
 		searchTF.sendKeys(data);
+		
+	}
+	public void clickSearchButton() {
 		searchButton.click();
 	}
 

@@ -12,6 +12,7 @@ public class Script3 extends BaseClass {
 	{
 		SoftAssert soft = new SoftAssert();
 		home.SearchFor("core java for selenium");
+		home.clickSearchButton();
 		soft.assertTrue(coreJava.pageHeader().isDisplayed());
 		coreJava.clickCoreJavaForSelenium();
 		soft.assertTrue(selenium.pageHeader().isDisplayed());

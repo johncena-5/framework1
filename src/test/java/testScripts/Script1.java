@@ -7,6 +7,7 @@ import genericLibraries.BaseClass;
 
 public class Script1 extends BaseClass{
 	
+	
 	@Test
 	public void firstTest()
 	{
