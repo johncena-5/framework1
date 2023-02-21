@@ -15,7 +15,6 @@ public class Script3 extends BaseClass {
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		home.clickSearchButton();
