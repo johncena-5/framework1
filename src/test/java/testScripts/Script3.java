@@ -11,6 +11,12 @@ public class Script3 extends BaseClass {
 	public void thirdTest()
 	{
 		SoftAssert soft = new SoftAssert();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		home.SearchFor("core java for selenium");
 		home.clickSearchButton();
 		soft.assertTrue(coreJava.pageHeader().isDisplayed());
