@@ -7,10 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import genericLibraries.BaseClass;
+
 
 public class HomePage {
-	WebDriver driver;
-	JavascriptExecutor js;
+	
+	
 	// Declaration
 	@FindBy(xpath = "//img[@alt=\"SkillRary\"]")
 	private WebElement logo;
