@@ -40,6 +40,14 @@ public class HomePage {
 		searchTF.sendKeys(data);
 		searchButton.click();
 	}
+	public void search_in( String data  ,WebDriver driver)
+	{
+		WebElement element = searchTF;
+		String js = "arguments[0].setAttribute('value','"+data+"')";
+		((JavascriptExecutor)driver).executeScript(js,element);
+		
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();",searchButton);
+	}
 
 	public void clickGears() {
 		gearstab.click();
