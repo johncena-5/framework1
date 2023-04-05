@@ -47,7 +47,6 @@ public class BaseClass {
 	public void methodConfiguration() {
 		time = Long.parseLong(property.fetchProperty("timeouts"));
 		driver = web.openApplication(property.fetchProperty("browser"), property.fetchProperty("url"), time);
-        s=driver;
 		home = new HomePage(driver);
 		Assert.assertTrue(home.getlogo().isDisplayed());
 		skillraryDemo = new SkillraryDemoAppPage(driver);

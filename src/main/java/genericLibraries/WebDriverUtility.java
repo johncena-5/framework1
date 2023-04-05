@@ -12,6 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -41,7 +42,9 @@ public class WebDriverUtility {
 
 		switch (browser) {
 		case "chrome":
-			driver = new ChromeDriver();
+			ChromeOptions option = new ChromeOptions();
+			option.addArguments("--remote-allow-origins=*");
+			driver = new ChromeDriver(option);
 			break;
 		case "firefox":
 			driver = new FirefoxDriver();

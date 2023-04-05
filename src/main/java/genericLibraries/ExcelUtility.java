@@ -26,7 +26,7 @@ public class ExcelUtility {
 	public void excelIntialization(String excelPath) {
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream("./src/test/resources/TestData.xlsx");
+			fis = new FileInputStream(excelPath);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
