@@ -6,6 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.asserts.SoftAssert;
 
 import pompages.ContactUsPage;
 import pompages.CoreJavaForSeleniumPage;
@@ -30,6 +31,7 @@ public class BaseClass {
 	protected SeleniumTrainingPage training;
 	protected ContactUsPage contactus;
 	protected long time;
+	protected SoftAssert soft;
    
 	// @BeforSuite
 	// @BeforeTest
@@ -38,6 +40,7 @@ public class BaseClass {
 		property = new PropertiesFileUtility();
 		excel = new ExcelUtility();
 		web = new WebDriverUtility();
+		soft = new SoftAssert();
 
 		property.propertyFileInitialization(IConstantPath.PROPERTIES_FILE_PATH);
 		excel.excelIntialization(IConstantPath.Excel_FILE_PATH);

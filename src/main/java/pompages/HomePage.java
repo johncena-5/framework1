@@ -14,13 +14,15 @@ public class HomePage {
 	
 	
 	// Declaration
+	
+	
 	@FindBy(xpath = "//img[@alt=\"SkillRary\"]")
 	private WebElement logo;
-	@FindBy(xpath = "//input[@placeholder=\"Search for Courses\"]")
+	@FindBy(name = "q")
 	private WebElement searchTF;
 	@FindBy(xpath = "//input[@value=\"go\"]")
 	private WebElement searchButton;
-	@FindBy(xpath = "//a[text()=' GEARS ']")
+	@FindBy(xpath = "//a[.=' GEARS ']")
 	private WebElement gearstab;
 	@FindBy(xpath = "//ul[@class=\"dropdown-menu gear_menu\"]/li/a[text()=' SkillRary Demo APP']")
 	private WebElement demoApplink;

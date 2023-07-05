@@ -3,6 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="testScripts.Script2">
+        <methods>
+          <include name="classConfiguration"/>
+          <include name="secondTest"/>
+          <include name="methodTearDown"/>
+          <include name="classTearDown"/>
+          <include name="methodConfiguration"/>
+        </methods>
+      </class> <!-- testScripts.Script2 -->
       <class name="testScripts.Script1">
         <methods>
           <include name="classConfiguration"/>
@@ -12,6 +21,24 @@
           <include name="methodConfiguration"/>
         </methods>
       </class> <!-- testScripts.Script1 -->
+      <class name="testScripts.Script4">
+        <methods>
+          <include name="classConfiguration"/>
+          <include name="forthTest"/>
+          <include name="methodTearDown"/>
+          <include name="classTearDown"/>
+          <include name="methodConfiguration"/>
+        </methods>
+      </class> <!-- testScripts.Script4 -->
+      <class name="testScripts.Script3">
+        <methods>
+          <include name="classConfiguration"/>
+          <include name="methodTearDown"/>
+          <include name="classTearDown"/>
+          <include name="thirdTest"/>
+          <include name="methodConfiguration"/>
+        </methods>
+      </class> <!-- testScripts.Script3 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

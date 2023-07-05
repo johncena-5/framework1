@@ -1,5 +1,6 @@
 package testScripts;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -11,12 +12,12 @@ public class Script1 extends BaseClass{
 	@Test
 	public void firstTest()
 	{
-		SoftAssert soft = new SoftAssert();
+		
+		home.searchFor("gears");
 		home.clickGears();
 		home.clickSkillraryDemoApp();
 		web.handleChildBrowser();
 	
-	    
 		soft.assertTrue(skillraryDemo.getPageHeader().isDisplayed());
 		skillraryDemo.mouseHoverToCourse(web);
 		skillraryDemo.clickSeleniumTraining();

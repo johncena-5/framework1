@@ -10,7 +10,7 @@ public class Script3 extends BaseClass {
 	@Test
 	public void thirdTest()
 	{
-		SoftAssert soft = new SoftAssert();
+		
 		home.search_in("core java for selenium", driver);
 		
 		soft.assertTrue(coreJava.pageHeader().isDisplayed());

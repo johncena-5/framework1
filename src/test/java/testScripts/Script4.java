@@ -12,7 +12,7 @@ public class Script4 extends BaseClass{
 	@Test
 	public void forthTest()
 	{
-		SoftAssert soft = new SoftAssert();
+		home.searchFor("gears");
 		home.clickGears();
 		home.clickSkillraryDemoApp();
 		web.handleChildBrowser();
