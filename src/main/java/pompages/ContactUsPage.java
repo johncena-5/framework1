@@ -17,7 +17,7 @@ public class ContactUsPage {
 	private WebElement subjectTF;
 	@FindBy(name = "message")
 	private WebElement messageTF;
-	@FindBy(xpath = "//button[text()='Send us mail']")
+	@FindBy(xpath = "//button[@class=\"btn btn-sm btn-primary\"]")
 	private WebElement sendUsMailButton;
 
 	public ContactUsPage(WebDriver driver) {
