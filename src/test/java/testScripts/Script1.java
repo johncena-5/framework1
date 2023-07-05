@@ -13,7 +13,7 @@ public class Script1 extends BaseClass{
 	public void firstTest()
 	{
 		
-		home.searchFor("gears");
+		home.search_in("gears",driver);
 		home.clickGears();
 		home.clickSkillraryDemoApp();
 		web.handleChildBrowser();
