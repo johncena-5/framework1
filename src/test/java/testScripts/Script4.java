@@ -12,7 +12,7 @@ public class Script4 extends BaseClass{
 	@Test
 	public void forthTest()
 	{
-		home.searchFor("gears");
+		home.search_in("gears",driver);
 		home.clickGears();
 		home.clickSkillraryDemoApp();
 		web.handleChildBrowser();
