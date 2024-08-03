@@ -1,9 +1,6 @@
 package testScripts;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
 import genericLibraries.BaseClass;
 
 public class Script1 extends BaseClass{

@@ -42,9 +42,9 @@ public class WebDriverUtility {
 
 		switch (browser) {
 		case "chrome":
-			ChromeOptions option = new ChromeOptions();
-			option.addArguments("--remote-allow-origins=*");
-			driver = new ChromeDriver(option);
+//			ChromeOptions option = new ChromeOptions();
+//			option.addArguments("--remote-allow-origins=*");
+			driver = new ChromeDriver();
 			break;
 		case "firefox":
 			driver = new FirefoxDriver();
